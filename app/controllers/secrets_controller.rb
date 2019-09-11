@@ -1,7 +1,9 @@
+
 class SecretsController < ApplicationController
   def create
     @secret = Secret.new(secret_params)
     @secret.save
+    redirect_to root_path
   end
 
   private

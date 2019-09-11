@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_11_090922) do
+ActiveRecord::Schema.define(version: 2019_09_11_102634) do
 
   create_table "secrets", force: :cascade do |t|
     t.string "message"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "public_uid"
+    t.index ["public_uid"], name: "index_secrets_on_public_uid"
   end
 
 end
