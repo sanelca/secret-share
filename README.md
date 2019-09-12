@@ -1,24 +1,22 @@
-# README
+# Secret share project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Secret share is really simple tool for sharing important data as passwords,
+credentials and similar things.
 
-Things you may want to cover:
+### Installing
 
-* Ruby version
+Run `bundle install` to install all project dependencies.
 
-* System dependencies
+### Migration
 
-* Configuration
+run `rake db:migrate` to migrate database
 
-* Database creation
+### Serve Project
 
-* Database initialization
+Run the server with the following command:
 
-* How to run the test suite
+```
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once its running, head over to your browser to [see Secret Share App](http://localhost:3000/).
